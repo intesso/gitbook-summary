@@ -25,6 +25,9 @@ program
   .option("-c, --catalog [catalog]", "catalog folders included book files, default is `all`.")
   .option("-i, --ignores [ignores]", "ignore folders that be excluded, default is `[]`.", list)
   .option("-u, --unchanged [unchanged]", "unchanged catalog like `request.js`, default is `[]`.")
+  .option("-p, --prettify", "prettify menu items")
+  .option("-s, --sort", "list menu directory items before files")
+  .option("-S, --skip", "remove leading numbers from menu items")
   .option("-o, --outputfile [outputfile]", "output file, defaut is `./SUMMARY.md`")
   .action(function(options) {
     // generate `SUMMARY.md`
